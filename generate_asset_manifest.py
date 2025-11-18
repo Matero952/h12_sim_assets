@@ -2,9 +2,13 @@ if __name__ == "__main__":
     import os
     import json
     import pprint
+    # print(__file__)
+    # print(type(__file__))
+    # breakpoint()
+    base_path = os.path.dirname(__file__)
     foo = {}
     foo["assets"] = {}
-    for path in os.scandir("assets"):
+    for path in os.scandir(base_path + "/assets"):
         print(path)
         print(type(path))
         foo["assets"][f"{path.name}"] = {}
@@ -12,6 +16,6 @@ if __name__ == "__main__":
             print(file)
             foo["assets"][f"{path.name}"][file.name.split(".")[1] + "_file"] = file.name
     pprint.pprint(foo)
-    with open("asset_manifest.json", "w") as f:
+    with open(base_path + "/asset_manifest.json", "w") as f:
         json.dump(foo, f, indent=4)
         # f.write(json.dump(foo, indent=4))
