@@ -1,0 +1,28 @@
+{
+    "assets": {
+        "hammer": {
+            "usdz_file": "obj.usdz"
+        },
+        "screwdriver": {
+            "usdz_file": "screwdriver_rawscan.usdz"
+        },
+        "wrench": {
+            "usdz_file": "old_wrench.usdz"
+        },
+        "drill": {
+            "usdz_file": "low_poly_drill.usdz"
+        },
+        "chainsaw": {
+            "usdz_file": "mini_chainsaw_scan_lowpoly.usdz"
+        },
+        "door": {
+            "usdz_file": "lowpoly_animated_toilet_latrine_or_privy.usdz"
+        },
+        "shovel": {
+            "usdz_file": "shovel.usdz"
+        },
+        "scissor": {
+            "usdz_file": "cc0_scissors.usdz"
+        }
+    }
+}
